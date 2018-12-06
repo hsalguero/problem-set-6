@@ -132,42 +132,8 @@ function drawColoredRectangle() {
  */
 
 function drawTriangle() {
-  const canvas = document.getElementById("canvas4");
-  const ctx = canvas.getContext("2d");
-  ctx.clearRect(0, 0, canvas4.width, canvas4.height);
-    let sideOne = Number(prompt("Side 1: "));
-    let sideTwo = Number(prompt("Side 2: "));
-    let sideThree = Number(prompt("Side 3: "));
-    if (isNaN(sideOne) || isNaN(sideTwo) || isNaN(sideThree)) {
-        alert('One of your side lengths is not a number.')
-    } else {
-        if (((sideOne + sideTwo) > sideThree) && ((sideOne + sideThree) > sideTwo) && ((sideTwo + sideThree) > sideOne)) {
-            let canvas4.height = Math.min(sideOne, sideTwo, sideThree);
-            let _0xb688x12 = Math.max(sideOne, sideTwo, sideThree);
-            let canvas4.width = (sideOne + sideTwo + sideThree) - canvas4.height - _0xb688x12;
-            if (((canvas4.height * canvas4.height) + (canvas4.width * canvas4.width)) === (_0xb688x12 * _0xb688x12)) {
-                let x = 10;
-                let y = 10;
-                if ((y + canvas4.height) > 511 || (x + canvas4.width) > 1023) {
-                    alert('The triangle will not fit on the canvas.')
-                } else {
-                    canvas.beginPath']();
-                    canvas.moveTo(x, y);
-                    canvas.lineTo(x, y + canvas4.height);
-                    canvas.lineTo(x + canvas4.width, y + canvas4.height);
-                    canvas.lineTo(x, y);
-                    canvas.closePath();
-                    canvas.stroke()
-                }
-            } else {
-                alert('This is not a valid right triangle.')
-            }
-        } else {
-            alert('That is not a valid right triangle.')
-        }
-    }
-}
 
+}
 /*
  * Smile. 7 points.
  *
