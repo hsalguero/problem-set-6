@@ -11,8 +11,7 @@
  */
 
 function sayHello() {
- const canvas=document.getElementById('canvas1')
- const ctx=canvas.getContext('2d')
+const ctx = document.getElementById('canvas1').getContext('2d');
  ctx.clearRect(0, 0, 50, 10)
  ctx.font = '48px sans-serif';
  ctx.strokeText('Hello, world!', 10, 50);
@@ -42,8 +41,7 @@ function sayHello() {
  */
 
 function drawRectangle() {
-  const canvas=document.getElementById('canvas2')
-  const ctx=canvas.getContext('2d')
+const ctx = document.getElementById('canvas2').getContext('2d');
   ctx.clearRect(0, 0, canvas2.width, canvas2.height)
   let height;
   let width;
@@ -90,8 +88,7 @@ ctx.strokeRect(x, y, width, height);
  */
 
 function drawColoredRectangle() {
-   const canvas = document.getElementById("canvas3");
-   const ctx = canvas.getContext("2d");
+const ctx = document.getElementById('canvas3').getContext('2d');
    ctx.clearRect(0, 0, canvas3.width, canvas3.height);
    let color = prompt("Color: ");
    if (color === "black" || color === "blue" || color === "green" || color === "orange" || color === "purple" || color === "red" || color === "yellow") {
@@ -132,7 +129,16 @@ function drawColoredRectangle() {
  */
 
 function drawTriangle() {
+  const ctx = document.getElementById('canvas4').getContext('2d');
 
+  while(true) {
+
+  }
+  ctx.beginPath();
+  ctx.moveTo();
+  ctx.lineTo();
+  ctx.lineTo();
+  ctx.fill();
 }
 /*
  * Smile. 7 points.
@@ -154,7 +160,7 @@ function drawTriangle() {
  */
 
 function drawSmileyFace() {
-
+const ctx = document.getElementById('canvas5').getContext('2d');
 }
 
 /*
@@ -176,7 +182,7 @@ function drawSmileyFace() {
  */
 
 function drawStar() {
-
+const ctx = document.getElementById('canvas6').getContext('2d');
 }
 
 /*
@@ -195,6 +201,7 @@ function drawStar() {
  */
 
 function drawStopSign() {
+const ctx =document.getElementById("canvas7").getContext("2d");
 
 }
 
@@ -217,7 +224,7 @@ function drawStopSign() {
  */
 
 function drawPyramid() {
-
+const ctx = document.getElementById('canvas8').getContext('2d');
 }
 
 /*
@@ -250,5 +257,5 @@ function drawPyramid() {
  */
 
 function drawHouse() {
-
+const ctx = document.getElementById('canvas9').getContext('2d');
 }
