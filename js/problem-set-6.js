@@ -130,7 +130,7 @@ const ctx = document.getElementById('canvas3').getContext('2d');
 
 function drawTriangle() {
   const ctx = document.getElementById('canvas4').getContext('2d');
-
+  let side1 = prompt("")
   while(true) {
 
   }
