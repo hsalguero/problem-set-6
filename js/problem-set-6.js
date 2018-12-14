@@ -130,15 +130,6 @@ const ctx = document.getElementById('canvas3').getContext('2d');
 
 function drawTriangle() {
   const ctx = document.getElementById('canvas4').getContext('2d');
-  let side1 = prompt("")
-  while(true) {
-
-  }
-  ctx.beginPath();
-  ctx.moveTo();
-  ctx.lineTo();
-  ctx.lineTo();
-  ctx.fill();
 }
 /*
  * Smile. 7 points.
@@ -202,7 +193,13 @@ const ctx = document.getElementById('canvas6').getContext('2d');
 
 function drawStopSign() {
 const ctx =document.getElementById("canvas7").getContext("2d");
-
+ctx.beginPath();
+  ctx.moveTo();
+  ctx.lineTo();
+  ctx.lineTo();
+  ctx.lineTo();
+  ctx.lineTo();
+  ctx.fill();
 }
 
 /*
